@@ -331,7 +331,7 @@ input:-webkit-autofill,input:-webkit-autofill:hover,input:-webkit-autofill:focus
       <svg width="18" height="18" viewBox="0 0 18 18"><path fill="#4285F4" d="M16.51 8H8.98v3h4.3c-.18 1-.74 1.48-1.6 2.04v2.01h2.6a7.8 7.8 0 0 0 2.38-5.88c0-.57-.05-.66-.15-1.18z"/><path fill="#34A853" d="M8.98 17c2.16 0 3.97-.72 5.3-1.94l-2.6-2.01c-.72.48-1.63.77-2.7.77-2.08 0-3.84-1.4-4.47-3.29H1.85v2.07A8 8 0 0 0 8.98 17z"/><path fill="#FBBC05" d="M4.51 10.53A4.8 4.8 0 0 1 4.26 9c0-.53.09-1.04.25-1.53V5.4H1.85A8 8 0 0 0 .98 9c0 1.29.31 2.51.87 3.6l2.66-2.07z"/><path fill="#EA4335" d="M8.98 3.58c1.17 0 2.23.4 3.06 1.2l2.3-2.3A8 8 0 0 0 8.98 1 8 8 0 0 0 1.85 5.4L4.5 7.47c.63-1.89 2.4-3.29 4.48-3.29z"/></svg>
       Google ile Devam Et
     </button>
-    <span class="lnk" id="loginApplyLink" onclick="G('s-register')" style="margin-top:18px">Hesabın yok mu? Başvur →</span>
+    <span class="lnk" id="loginApplyLink" onclick="G('s-register')" style="margin-top:18px">Hesabın yok mu? Üye ol →</span>
     <span class="lnk" onclick="G('s-forgot')" style="margin-top:10px;color:var(--muted)">Şifremi unuttum</span>
   </div>
 </div>
@@ -364,9 +364,9 @@ input:-webkit-autofill,input:-webkit-autofill:hover,input:-webkit-autofill:focus
 <!-- REGISTER -->
 
 <div class="screen" id="s-register">
-  <div class="nav"><span class="nav-brand" id="regNavBrand" style="font-size:14px">BAŞVURU</span><div class="nav-spacer"></div><button class="nb" onclick="G('s-login')">← GERİ</button></div>
+  <div class="nav"><span class="nav-brand" id="regNavBrand" style="font-size:14px">ÜYE OL</span><div class="nav-spacer"></div><button class="nb" onclick="G('s-login')">← GERİ</button></div>
   <div style="padding:24px 24px 80px">
-    <p class="t-mono" id="regSub" style="font-size:9px;color:var(--muted);letter-spacing:1px;line-height:1.9;margin-bottom:24px">Başvurunuz incelendikten sonra üyelik kodunuz iletilecek.</p>
+    <p class="t-mono" id="regSub" style="font-size:9px;color:var(--muted);letter-spacing:1px;line-height:1.9;margin-bottom:24px">Üyelik hemen açılır. Rezervasyon talebin onaydan sonra kesinleşir.</p>
     <div class="f"><label id="lbRef">REFERANS KODU <span style="color:var(--dim);font-size:7px">(OPSİYONEL)</span></label><input class="fi" type="text" id="refInput" placeholder="NIP-REF-XXXXXX" maxlength="14" oninput="this.value=this.value.toUpperCase();checkRef(this.value)"></div>
     <div class="ref-ok" id="refOk"></div>
     <div class="ref-err" id="refErr"></div>
@@ -381,7 +381,7 @@ input:-webkit-autofill,input:-webkit-autofill:hover,input:-webkit-autofill:focus
     </div>
     <div class="f"><label>INSTAGRAM</label><input class="fi" type="text" id="regInsta" placeholder="@kullaniciadi"></div>
     <div class="err" id="regErr"></div>
-    <button class="btn" id="regBtn" onclick="doRegister()"><span id="regBtnTxt">BAŞVUR</span></button>
+    <button class="btn" id="regBtn" onclick="doRegister()"><span id="regBtnTxt">ÜYE OL</span></button>
   </div>
 </div>
 
@@ -390,7 +390,7 @@ input:-webkit-autofill,input:-webkit-autofill:hover,input:-webkit-autofill:focus
 <div class="screen" id="s-complete-profile">
   <div class="nav"><span class="nav-brand" style="font-size:14px">PROFİLİNİ TAMAMLA</span></div>
   <div style="padding:24px 24px 80px">
-    <p class="t-mono" style="font-size:9px;color:var(--muted);letter-spacing:1px;line-height:1.9;margin-bottom:24px">Üyelik başvurunun tamamlanması için aşağıdaki bilgileri doldur.</p>
+    <p class="t-mono" style="font-size:9px;color:var(--muted);letter-spacing:1px;line-height:1.9;margin-bottom:24px">Üyeliğini tamamlamak için aşağıdaki bilgileri doldur.</p>
     <div class="f"><label>TELEFON</label>
       <div class="phone-row">
         <select class="phone-cc" id="cpPhoneCC"><option value="+90">🇹🇷 +90</option><option value="+7">🇷🇺 +7</option><option value="+1">🇺🇸 +1</option><option value="+44">🇬🇧 +44</option><option value="+49">🇩🇪 +49</option></select>
@@ -402,7 +402,7 @@ input:-webkit-autofill,input:-webkit-autofill:hover,input:-webkit-autofill:focus
     <div class="ref-ok" id="cpRefOk"></div>
     <div class="ref-err" id="cpRefErr"></div>
     <div class="err" id="cpErr"></div>
-    <button class="btn" id="cpBtn" onclick="doCompleteProfile()"><span id="cpBtnTxt">BAŞVURUYU GÖNDER</span></button>
+    <button class="btn" id="cpBtn" onclick="doCompleteProfile()"><span id="cpBtnTxt">ÜYELİĞİ TAMAMLA</span></button>
   </div>
 </div>
 
@@ -410,13 +410,13 @@ input:-webkit-autofill,input:-webkit-autofill:hover,input:-webkit-autofill:focus
 
 <div class="screen" id="s-pending" style="padding-top:env(safe-area-inset-top)">
   <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100%;padding:40px 24px;text-align:center">
-    <div style="font-size:52px;margin-bottom:20px">⏳</div>
-    <div id="pendingTitle" class="t-brand" style="font-size:36px;margin-bottom:12px">BAŞVURUNUZ ALINDI</div>
-    <div id="pendingSub" class="t-mono" style="font-size:9px;color:var(--muted);letter-spacing:1px;line-height:2.2;margin-bottom:40px;max-width:280px">Başvurunuz incelendikten sonra bilgilendirileceksiniz.</div>
+    <div style="font-size:52px;margin-bottom:20px">✉️</div>
+    <div id="pendingTitle" class="t-brand" style="font-size:36px;margin-bottom:12px">E-POSTANI KONTROL ET</div>
+    <div id="pendingSub" class="t-mono" style="font-size:9px;color:var(--muted);letter-spacing:1px;line-height:2.2;margin-bottom:40px;max-width:280px">Hesabını açmak için e-postana gelen bağlantıya dokun. Sonra giriş yap.</div>
     <div class="pending-steps">
-      <div class="step-row"><div class="step-dot done"></div><div class="step-txt">Başvuru alındı ✓</div></div>
-      <div class="step-row"><div class="step-dot wait"></div><div class="step-txt active">Admin incelemesi bekleniyor…</div></div>
-      <div class="step-row"><div class="step-dot idle"></div><div class="step-txt">Üyelik kodu iletilecek</div></div>
+      <div class="step-row"><div class="step-dot done"></div><div class="step-txt">Kayıt alındı ✓</div></div>
+      <div class="step-row"><div class="step-dot wait"></div><div class="step-txt active">E-posta doğrulaması bekleniyor…</div></div>
+      <div class="step-row"><div class="step-dot idle"></div><div class="step-txt">Üyelik hemen açılır</div></div>
     </div>
     <button class="btn-sm" onclick="doLogout()">← Çıkış Yap</button>
   </div>
@@ -672,7 +672,7 @@ input:-webkit-autofill,input:-webkit-autofill:hover,input:-webkit-autofill:focus
       <svg width="18" height="18" viewBox="0 0 18 18"><path fill="#4285F4" d="M16.51 8H8.98v3h4.3c-.18 1-.74 1.48-1.6 2.04v2.01h2.6a7.8 7.8 0 0 0 2.38-5.88c0-.57-.05-.66-.15-1.18z"/><path fill="#34A853" d="M8.98 17c2.16 0 3.97-.72 5.3-1.94l-2.6-2.01c-.72.48-1.63.77-2.7.77-2.08 0-3.84-1.4-4.47-3.29H1.85v2.07A8 8 0 0 0 8.98 17z"/><path fill="#FBBC05" d="M4.51 10.53A4.8 4.8 0 0 1 4.26 9c0-.53.09-1.04.25-1.53V5.4H1.85A8 8 0 0 0 .98 9c0 1.29.31 2.51.87 3.6l2.66-2.07z"/><path fill="#EA4335" d="M8.98 3.58c1.17 0 2.23.4 3.06 1.2l2.3-2.3A8 8 0 0 0 8.98 1 8 8 0 0 0 1.85 5.4L4.5 7.47c.63-1.89 2.4-3.29 4.48-3.29z"/></svg>
       Google ile Devam Et
     </button>
-    <span class="lnk" onclick="closeAuthModal();G('s-register')">Hesabın yok mu? Başvur →</span>
+    <span class="lnk" onclick="closeAuthModal();G('s-register')">Hesabın yok mu? Üye ol →</span>
     <span class="lnk" onclick="closeAuthModal()" style="margin-top:8px;color:var(--dim)">Vazgeç</span>
   </div>
 </div>
@@ -718,9 +718,9 @@ const State = {
 
 // ═══ LANG ═══
 const LANG = {
-  tr:{loginBtn:'GİRİŞ YAP',email:'E-POSTA',pw:'ŞİFRE',noAccount:'Hesabın yok mu? Başvur →',nav:'BAŞVURU',sub:'Başvurunuz incelendikten sonra üyelik kodunuz iletilecek.',ref:'REFERANS KODU',name:'İSİM SOYAD',phone:'TELEFON',applyBtn:'BAŞVUR',pendingTitle:'BAŞVURUNUZ ALINDI',pendingSub:'İnceleme sonrası bilgilendirileceksiniz.',selAbove:'Yukarıdan bir etkinlik seçin',selEvt:'SEÇİLEN ETKİNLİK',guests:'KİŞİ SAYISI',resBtn:'REZERVASYON TALEBİ GÖNDER',rules:'🔵 Etkinlik kurallarını okudum ve kabul ediyorum',tickets:'BİLETLERİM',back:'← GERİ',out:'ÇIKIŞ',membersOnly:'SADECE ÜYELERE ÖZEL',membersOnlySub:'Bu etkinliğe rezervasyon yapmak için üye olman gerekiyor.',errInvalid:'Geçersiz e-posta veya şifre',errFields:'Tüm alanları doldurun',errPw:'Şifre en az 8 karakter olmalı',nameLbl:'İSİM SOYAD',phoneLbl:'TELEFON',sheetHintTxt:'↑ REZERVASYON FORMU',guestsLbl:'KİŞİ SAYISI',selEvtLbl:'SEÇİLEN ETKİNLİK',selAboveTxt:'Yukarıdan bir etkinlik seçin',guestNote:'Üye olmadan rezervasyon yapıyorsunuz. Puan kazanamazsınız.',rulesLbl:'🔵 Etkinlik kurallarını okudum ve kabul ediyorum',eventsTitle:'ETKİNLİKLER',listBtn:'LİSTE',calBtn:'TAKVİM'},
-  en:{loginBtn:'SIGN IN',email:'EMAIL',pw:'PASSWORD',noAccount:"Don't have an account? Apply",nav:'APPLY',sub:'Applications are reviewed manually.',ref:'REFERRAL CODE',name:'FULL NAME',phone:'PHONE',applyBtn:'APPLY',pendingTitle:'APPLICATION RECEIVED',pendingSub:'You will be notified once approved.',selAbove:'Select an event above',selEvt:'SELECTED EVENT',guests:'NUMBER OF GUESTS',resBtn:'REQUEST RESERVATION',rules:'🔵 I have read and agree to the event rules',tickets:'MY TICKETS',back:'← BACK',out:'LOG OUT',membersOnly:'MEMBERS ONLY',membersOnlySub:'You need to be a member to reserve this event.',errInvalid:'Invalid email or password',errFields:'Please fill all fields',errPw:'Password must be at least 8 characters',nameLbl:'FULL NAME',phoneLbl:'PHONE',sheetHintTxt:'↑ RESERVATION FORM',guestsLbl:'NUMBER OF GUESTS',selEvtLbl:'SELECTED EVENT',selAboveTxt:'Select an event above',guestNote:'Reserving as a guest. You will not earn points.',rulesLbl:'🔵 I have read and agree to the event rules',eventsTitle:'EVENTS',listBtn:'LIST',calBtn:'CALENDAR'},
-  ru:{loginBtn:'ВОЙТИ',email:'ЭЛ. ПОЧТА',pw:'ПАРОЛЬ',noAccount:'Нет аккаунта? Подать заявку',nav:'ЗАЯВКА',sub:'Заявки рассматриваются вручную.',ref:'РЕФЕРАЛЬНЫЙ КОД',name:'ИМЯ И ФАМИЛИЯ',phone:'ТЕЛЕФОН',applyBtn:'ПОДАТЬ ЗАЯВКУ',pendingTitle:'ЗАЯВКА ПОЛУЧЕНА',pendingSub:'Вы получите уведомление после одобрения.',selAbove:'Выберите событие выше',selEvt:'ВЫБРАННОЕ СОБЫТИЕ',guests:'КОЛИЧЕСТВО ГОСТЕЙ',resBtn:'ЗАПРОСИТЬ БРОНИРОВАНИЕ',rules:'🔵 Я прочитал и согласен с правилами',tickets:'МОИ БИЛЕТЫ',back:'← НАЗАД',out:'ВЫХОД',membersOnly:'ТОЛЬКО ДЛЯ УЧАСТНИКОВ',membersOnlySub:'Для брони этого события нужно быть участником.',errInvalid:'Неверный email или пароль',errFields:'Заполните все поля',errPw:'Пароль должен содержать не менее 8 символов',nameLbl:'ИМЯ И ФАМИЛИЯ',phoneLbl:'ТЕЛЕФОН',sheetHintTxt:'↑ ФОРМА БРОНИРОВАНИЯ',guestsLbl:'КОЛИЧЕСТВО ГОСТЕЙ',selEvtLbl:'ВЫБРАННОЕ СОБЫТИЕ',selAboveTxt:'Выберите событие выше',guestNote:'Бронирование без членства. Баллы не начисляются.',rulesLbl:'🔵 Я прочитал и согласен с правилами',eventsTitle:'СОБЫТИЯ',listBtn:'СПИСОК',calBtn:'КАЛЕНДАРЬ'}
+  tr:{loginBtn:'GİRİŞ YAP',email:'E-POSTA',pw:'ŞİFRE',noAccount:'Hesabın yok mu? Üye ol →',nav:'ÜYE OL',sub:'Üyelik hemen açılır. Rezervasyon talebin onaydan sonra kesinleşir.',ref:'REFERANS KODU',name:'İSİM SOYAD',phone:'TELEFON',applyBtn:'ÜYE OL',pendingTitle:'E-POSTANI KONTROL ET',pendingSub:'Hesabını açmak için e-postana gelen bağlantıya dokun. Sonra giriş yap.',selAbove:'Yukarıdan bir etkinlik seçin',selEvt:'SEÇİLEN ETKİNLİK',guests:'KİŞİ SAYISI',resBtn:'REZERVASYON TALEBİ GÖNDER',rules:'🔵 Etkinlik kurallarını okudum ve kabul ediyorum',tickets:'BİLETLERİM',back:'← GERİ',out:'ÇIKIŞ',membersOnly:'SADECE ÜYELERE ÖZEL',membersOnlySub:'Bu etkinliğe rezervasyon yapmak için üye olman gerekiyor.',errInvalid:'Geçersiz e-posta veya şifre',errFields:'Tüm alanları doldurun',errPw:'Şifre en az 8 karakter olmalı',nameLbl:'İSİM SOYAD',phoneLbl:'TELEFON',sheetHintTxt:'↑ REZERVASYON FORMU',guestsLbl:'KİŞİ SAYISI',selEvtLbl:'SEÇİLEN ETKİNLİK',selAboveTxt:'Yukarıdan bir etkinlik seçin',guestNote:'Üye olmadan rezervasyon yapıyorsunuz. Puan kazanamazsınız.',rulesLbl:'🔵 Etkinlik kurallarını okudum ve kabul ediyorum',eventsTitle:'ETKİNLİKLER',listBtn:'LİSTE',calBtn:'TAKVİM'},
+  en:{loginBtn:'SIGN IN',email:'EMAIL',pw:'PASSWORD',noAccount:"Don't have an account? Join →",nav:'JOIN',sub:'Membership opens right away. Reservation requests are confirmed after approval.',ref:'REFERRAL CODE',name:'FULL NAME',phone:'PHONE',applyBtn:'JOIN',pendingTitle:'CHECK YOUR EMAIL',pendingSub:'Tap the link we sent to your email to activate your account. Then sign in.',selAbove:'Select an event above',selEvt:'SELECTED EVENT',guests:'NUMBER OF GUESTS',resBtn:'REQUEST RESERVATION',rules:'🔵 I have read and agree to the event rules',tickets:'MY TICKETS',back:'← BACK',out:'LOG OUT',membersOnly:'MEMBERS ONLY',membersOnlySub:'You need to be a member to reserve this event.',errInvalid:'Invalid email or password',errFields:'Please fill all fields',errPw:'Password must be at least 8 characters',nameLbl:'FULL NAME',phoneLbl:'PHONE',sheetHintTxt:'↑ RESERVATION FORM',guestsLbl:'NUMBER OF GUESTS',selEvtLbl:'SELECTED EVENT',selAboveTxt:'Select an event above',guestNote:'Reserving as a guest. You will not earn points.',rulesLbl:'🔵 I have read and agree to the event rules',eventsTitle:'EVENTS',listBtn:'LIST',calBtn:'CALENDAR'},
+  ru:{loginBtn:'ВОЙТИ',email:'ЭЛ. ПОЧТА',pw:'ПАРОЛЬ',noAccount:'Нет аккаунта? Вступить →',nav:'ВСТУПИТЬ',sub:'Членство открывается сразу. Бронь подтверждается после одобрения.',ref:'РЕФЕРАЛЬНЫЙ КОД',name:'ИМЯ И ФАМИЛИЯ',phone:'ТЕЛЕФОН',applyBtn:'ВСТУПИТЬ',pendingTitle:'ПРОВЕРЬТЕ ПОЧТУ',pendingSub:'Перейдите по ссылке из письма, чтобы активировать аккаунт. Затем войдите.',selAbove:'Выберите событие выше',selEvt:'ВЫБРАННОЕ СОБЫТИЕ',guests:'КОЛИЧЕСТВО ГОСТЕЙ',resBtn:'ЗАПРОСИТЬ БРОНИРОВАНИЕ',rules:'🔵 Я прочитал и согласен с правилами',tickets:'МОИ БИЛЕТЫ',back:'← НАЗАД',out:'ВЫХОД',membersOnly:'ТОЛЬКО ДЛЯ УЧАСТНИКОВ',membersOnlySub:'Для брони этого события нужно быть участником.',errInvalid:'Неверный email или пароль',errFields:'Заполните все поля',errPw:'Пароль должен содержать не менее 8 символов',nameLbl:'ИМЯ И ФАМИЛИЯ',phoneLbl:'ТЕЛЕФОН',sheetHintTxt:'↑ ФОРМА БРОНИРОВАНИЯ',guestsLbl:'КОЛИЧЕСТВО ГОСТЕЙ',selEvtLbl:'ВЫБРАННОЕ СОБЫТИЕ',selAboveTxt:'Выберите событие выше',guestNote:'Бронирование без членства. Баллы не начисляются.',rulesLbl:'🔵 Я прочитал и согласен с правилами',eventsTitle:'СОБЫТИЯ',listBtn:'СПИСОК',calBtn:'КАЛЕНДАРЬ'}
 };
 function t(k){return (LANG[State.lang]||LANG.tr)[k]||k;}
 
@@ -846,7 +846,7 @@ async function loadProfile(){
 function afterProfileLoad(){
   var p=State.profile;
   if(!p){showGuestMode();G('s-customer');return;}
-  if(p.status==='pending'){G('s-pending');return;}
+  // Üyelik onaysız (10.11.2026): bekleme duvarı yok. Durumu veritabanı yönetir.
   if(['rejected','frozen','banned'].includes(p.status)){doLogout();return;}
   showMemberMode(p);G('s-customer');
 }
@@ -989,11 +989,11 @@ async function doCompleteProfile(){
   var cpCC=val('cpPhoneCC')||'+90',cpNum=val('cpPhone').trim(),phone=cpNum?(cpCC+cpNum):'',insta=val('cpInsta').trim(),refCode=val('cpRef').toUpperCase().trim();
   setErr('cpErr','');
   if(!phone){setErr('cpErr','Telefon numarası zorunludur');return;}
-  setLoading('cpBtn','cpBtnTxt','BAŞVURUYU GÖNDER',true);
-  var upd={phone,instagram:insta||null,status:'pending'};
-  if(refCode&&_cpRefProfile){upd.status='approved';upd.member_code='NIP-MBR-'+randomHex(6).toUpperCase();upd.ref_by=_cpRefProfile.name;upd.referred_by=_cpRefProfile.id;await _SB.from('profiles').update({referral_used:(_cpRefProfile.referral_used||0)+1}).eq('id',_cpRefProfile.id);}
+  setLoading('cpBtn','cpBtnTxt','ÜYELİĞİ TAMAMLA',true);
+  var upd={phone,instagram:insta||null};
+  if(refCode&&_cpRefProfile){upd.ref_by=_cpRefProfile.name;upd.referred_by=_cpRefProfile.id;await _SB.from('profiles').update({referral_used:(_cpRefProfile.referral_used||0)+1}).eq('id',_cpRefProfile.id);}
   var res=await _SB.from('profiles').update(upd).eq('id',State.session.user.id);
-  setLoading('cpBtn','cpBtnTxt','BAŞVURUYU GÖNDER',false);
+  setLoading('cpBtn','cpBtnTxt','ÜYELİĞİ TAMAMLA',false);
   if(res.error){setErr('cpErr',res.error.message);return;}
   await loadProfile();afterProfileLoad();
 }
@@ -1327,7 +1327,7 @@ async function doResInline(id){
   var ins=await _SB.from('reservations').insert(insertData).select().single();
   setLoading('ri-btn-'+id,'ri-btntxt-'+id,t('resBtn'),false);
   if(ins.error){if(ins.error.code==='23505')toast('Bu etkinliğe zaten kayıt yaptırdınız');else toast('Hata: '+ins.error.message);return;}
-  toast('Rezervasyon talebiniz alındı ✓');
+  toast(isGuest?'Talebin alındı ✓ Onaylanınca telefonundan haber vereceğiz.':'Talebin alındı ✓ Onaylanınca e-posta ile haber vereceğiz.');
   // Close panel
   var panel=document.getElementById('ri-'+id);if(panel){panel.classList.remove('open');setTimeout(function(){panel.innerHTML='';},400);}
   _rilCounts[id]=1;
@@ -1412,7 +1412,7 @@ async function doRes(){
   var ins=await _SB.from('reservations').insert(insertData).select().single();
   setLoading('subBtn','subBtnTxt',t('resBtn'),false);
   if(ins.error){if(ins.error.code==='23505')toast('Bu etkinliğe zaten kayıt yaptırdınız');else toast('Hata: '+ins.error.message);return;}
-  toast('Rezervasyon talebiniz alındı ✓');closeSheet();
+  toast(isGuest?'Talebin alındı ✓ Onaylanınca telefonundan haber vereceğiz.':'Talebin alındı ✓ Onaylanınca e-posta ile haber vereceğiz.');closeSheet();
   if(!isGuest){G('s-tickets');openTickets();}else{var fn2=document.getElementById('fName');if(fn2)fn2.value='';var fp2=document.getElementById('fPhone');if(fp2)fp2.value='';resetSheet();}
 }
 
@@ -1867,7 +1867,8 @@ async function approveRes(id,evtId,count,cid){
 }
 async function rejectRes(id,cid){_adminCardFlash(id,'✕ REDDEDİLDİ','r');await _SB.from('reservations').update({status:'rejected'}).eq('id',id);toast('Reddedildi');if(cid==='recR')renderRecR();else renderRes();}
 async function markNoShow(id,profileId,cid){
-  await _SB.from('reservations').update({status:'no_show'}).eq('id',id);
+  var ns=await _SB.from('reservations').update({status:'no_show'}).eq('id',id);
+  if(ns.error){toast('Gelmedi yazılamadı. Puan değişmedi.');return;}
   if(profileId){var p=await _SB.from('profiles').select('trust_score,total_no_show,attendance_streak').eq('id',profileId).single();if(p.data){var nt=Math.max(0,(p.data.trust_score||100)-40);await _SB.from('profiles').update({total_no_show:(p.data.total_no_show||0)+1,trust_score:nt,attendance_streak:0}).eq('id',profileId);}}
   _adminCardFlash(id,'— GELMEDİ','r');toast('No-show. -40 puan');if(cid==='recR')renderRecR();else renderRes();
 }
@@ -1991,7 +1992,7 @@ async function doResCal(id){
   var ins=await _SB.from('reservations').insert(insertData).select().single();
   setLoading('cf-btn-'+id,'cf-btntxt-'+id,t('resBtn'),false);
   if(ins.error){if(ins.error.code==='23505')toast('Bu etkinliğe zaten kayıt yaptırdınız');else toast('Hata: '+ins.error.message);return;}
-  toast('Rezervasyon talebiniz alındı ✓');
+  toast(isGuest?'Talebin alındı ✓ Onaylanınca telefonundan haber vereceğiz.':'Talebin alındı ✓ Onaylanınca e-posta ile haber vereceğiz.');
   _cfCounts[id]=1;
   if(!isGuest){G('s-tickets');openTickets();}
 }
